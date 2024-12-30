@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sentiment Analysis</h1>
+            <p>Enter some text to analyze its sentiment</p>
+        </header>
+
+        <section class="form-section">
+            <form action="/analyze" method="POST">
+                <label for="text">Enter Text</label>
+                <textarea id="text" name="text" rows="4" cols="50" required></textarea>
+                <br><br>
+                <button type="submit">Analyze Sentiment</button>
+            </form>
+        </section>
+
+        <section class="result-section">
+            {% if sentiment %}
+                <h2>Result:</h2>
+                <p class="{{ sentiment_class }}">{{ sentiment }}</p>
+            {% endif %}
+        </section>
+    </div>
+</body>
+</html>
