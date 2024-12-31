@@ -28,27 +28,27 @@ JavaScript: To enhance user interaction.
 To get started with this project locally, follow these steps:
 
 ### **1. Clone the Repository:**
-``
+```jsx
 git clone https://github.com/Bhavadharani-2306/Sentiment-Analysis.git
-``
+```
 
 ### **2. Navigate to the Project Directory:**
-``
+```npm
 cd Sentiment-Analysis
-``
+```
 
 ### **3. Install Dependencies:**
 First, make sure you have Python installed. Then, install the necessary libraries by running:
-``
+```npm
 pip install -r requirements.txt
-``
+```
 This will install all the required dependencies, including Flask, TextBlob, and others.
 
 ### **4. Run the Application:**
 Start the Flask web server by running:
-``
+```jsx
 python app.py
-``
+```
 My web application will be accessible at http://127.0.0.1:5000/.
 
 ---
